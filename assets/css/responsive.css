@@ -1,4 +1,8 @@
-@media (max-width: 767.98px){
+@media only screen and (max-width: 767.98px){
+    #myPage{
+        width: 200%;
+    
+    }
     #myNavbar{
         display: none;
     }
@@ -37,11 +41,45 @@
     #main-menu ul li:hover a{
         color: #1ecbf4;
     }
+    /* dự án */
+    .project .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    
+    .project .col {
+        padding: 0px 15px;
+        width: 100%;
+    }
+    
+    .project .col .thumbnail {
+        background-color: #ffffff;
+        margin: 0px 0px 20px;
+        padding: 0px 0px 15px;
+    }
+    
+    .project .col .thumbnail img {
+        margin: 0px 0px 10px;
+        width: 100%;
+        height: auto;
+    }
+    /* bảng giá */
     .introduce-2 .col-left{
         font-size:150px;
     }
+    .price-list .row {
+        flex-direction: column;
+        /* align-items: center; */
+
+    }
+      
+    .price-list .row .col {
+        width: 100%;
+        padding: 0;
+    }
 }
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
     #toggle{
         display: none;
     }
