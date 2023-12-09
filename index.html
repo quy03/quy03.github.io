@@ -3,9 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trịnh Bảo Quý</title>
+    <link rel="shortcut icon" href="./images/" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Trịnh Bảo Quý</h1>
+<body id="myPage">
+    <!----------------Header----------------->
+    <header id="fixed-menu">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#myPage">Quythit777</a>
+                </div>
+                <div class="collapse" id="myNavbar">
+                    <ul>
+                        <li><a href="#about">GIỚI THIỆU </a></li>
+                        <li><a href="#services">DỊCH VỤ </a></li>
+                        <li><a href="#portfolio">DỰ ÁN </a></li>
+                        <li><a href="#pricing">GIÁ </a></li>
+                        <li><a href="#contact">LIÊN HỆ </a></li>
+                    </ul>
+                </div>
+                <!-- mobile -->
+                <div id="toggle">
+                    <i id="" class="bi bi-list"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main-menu" style="display: none;">
+        <ul>
+            <li><a href="#about">GIỚI THIỆU </a></li>
+            <li><a href="#services">DỊCH VỤ </a></li>
+            <li><a href="#portfolio">DỰ ÁN </a></li>
+            <li><a href="#pricing">GIÁ </a></li>
+            <li><a href="#contact">LIÊN HỆ </a></li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function() {
+                $('#main-menu').slideToggle();
+            });
+        });
+    </script>
+    <!-------------Mở đầu-Tiêu đề------------>
+    <div class="jumbotron">
+        <h1>MYCLASS.VN </h1>
+        <p>Đội ngũ trẻ - Giàu tâm huyết</p>
+        <form action="" class="form-inline">
+            <input id="abc" type="email" class="form-control" size="50" placeholder="Nhập địa chỉ email của bạn" required>
+            <button type="button" class="danger">Đăng kí theo dõi </button>
+        </form>
+    </div>
+    <!--------------Giới Thiệu--------------->
+    <div id="about" class="introduce-1">
+            <div class="col-left">
+                <h2>Giới thiệu myclass.vn </h2><br>
+                <h4>Myclass.vn - Bên cạnh sản phẩm tâm huyết - Hệ thống dạy lập trình trực tuyến myclass.vn, chúng tôi còn là đơn vị gia công phần mềm cho các công ty trong và ngoài nước với những sản phẩm mang nét khác biệt và theo từng đơn đặt hàng riêng
+                    lẻ.
+                </h4><br>
+                <p>Chúng tôi cam kết đến những sản phẩm chất lượng cao nhất, hiện đại nhất, thân thiện với người dùng và myclass.vn đánh giá cao các công việc bảo trì sau khi bàn giao sản phẩm cho khách hàng .</p>
+                <br><button>Liên hệ với chúng tôi</button>
+            </div>
+            <div class="col-right">
+                <i class="bi bi-reception-4"></i>
+            </div>
+        </div>
+    </div>
+    <div id="" class="introduce-2">
+        <div class="col-left">
+            <i class="bi bi-globe-americas"></i>
+        </div>
+        <div class="col-right">
+            <h2>Giá trị của Myclass.vn mang lại </h2><br>
+            <h4><strong>Sứ mệnh :</strong> Đơn vị tiên phong tại Việt Nam về lĩnh vực đào tạo lập trình trực tuyến. Đơn vị gia công phần mềm với những sản phẩm chất lượng, uy tín cho khách hàng.</h4><br>
+            <h4><strong>Tầm nhìn :</strong> Bên cạnh các hệ thống e-learning cho lập tình, chúng tôi còn mở rộng sang các mảng dạy trực tuyến cho nhiều ngành nghề khác và cho nhiều đơn vị khác trong nước. Sau khi hoàn thiện trong nước,myclass.vn chúng tôi
+                sẽ mở rộng ra các thị trường Đông Nam Á và thế giới.</h4>
+        </div>
+    </div>
+    <!--------------Dịch Vụ----------------->
+    <div id="services" class="service">
+        <h2>Dịch vụ</h2>
+        <h4 class="h4">Các dịch vụ chúng tôi bao gồm </h4>
+        <br>
+        <div class="row-top">
+            <div class="col">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Elearing-Framework</h4>
+                <p>Phần mềm khung chạy trực tuyến </p>
+            </div>
+            <div class="col">
+                <i class="bi bi-heart"></i>
+                <h4>Phát triển website </h4>
+                <p>Chúng tôi phát triển website theo các đơn đặt hàng</p>
+            </div>
+            <div class="col">
+                <i class="bi bi-shield-lock"></i>
+                <h4>Hệ thống CRM</h4>
+                <p>Hệ thống quản trị khách hàng CRM</p>
+            </div>
+        </div>
+        <div class="row-bottom">
+            <div class="col">
+                <i class="bi bi-snow"></i>
+                <h4>Hệ thống Phòng khám điện tử </h4>
+                <p>Xây dựng hệ thống phòng khám điện tử .</p>
+            </div>
+            <div class="col">
+                <i class="bi bi-sun"></i>>
+                <h4>Hệ thống quản lý nha khoa </h4>
+                <p>Hệ thống quản lý nha khoa .</p>
+            </div>
+            <div class="col">
+                <i class="bi bi-wrench-adjustable"></i>
+                <h4>Quản lý kho </h4>
+                <p>Hệ thống quản lý kho .</p>
+            </div>
+        </div>
+    </div>
+    <!--------------Dự Án------------------->
+    <div id="portfolio" class="project">
+        <h2>Dự án tiêu biểu</h2>
+        <h4>Một trong những dự án website myclass.vn đã triển khai </h4>
+        <div class="row">
+            <div class="col">
+                <div class="thumbnail">
+                    <img src="./images/photo1.png" alt="Paris" width="400" height="300">
+                    <p><strong>Dự án 1</strong></p>
+                    <p>Dự án web 1</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="thumbnail">
+                    <img src="./images/photo2.png" alt="New York" width="400" height="300">
+                    <p><strong>Dự án 2</strong></p>
+                    <p>Dự án web 2</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="thumbnail">
+                    <img src="./images/photo3.png" alt="paris" width="400" height="300">
+                    <p><strong>Dự án 3</strong></p>
+                    <p>Dự án web 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Bảng Giá------------ -->
+    <div class="price-list" id="pricing">
+        <div class="text-center">
+            <h2>Bảng giá</h2>
+            <p>Chọn giá mà bạn muốn xây dựng website</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h1>Cơ bản </h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>HTML</strong> Cơ Bản </p>
+                        <p><strong>CSS</strong> Cơ Bản </p>
+                        <p><strong>Javascript</strong> Cơ Bản</p>
+                        <p><strong>jQuery</strong> Cơ Bản </p>
+                        <p><strong>Bootstrap</strong> Cơ Bản </p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$199 </h3>
+                        <h4>Mỗi Tháng </h4>
+                        <button>Đăng kí </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h1>Nâng cao </h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>50</strong> Lorem</p>
+                        <p><strong>25</strong> Ipsum</p>
+                        <p><strong>10</strong> Dolor</p>
+                        <p><strong>5</strong> Sit</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$299 </h3>
+                        <h4>mỗi tháng</h4>
+                        <button>Đăng kí </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h1>Cao cấp </h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>100</strong> Lorem</p>
+                        <p><strong>50</strong> Ipsum</p>
+                        <p><strong>25</strong> Dolor</p>
+                        <p><strong>10</strong> Sit</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$399 </h3>
+                        <h4>mỗi tháng </h4>
+                        <button>Đăng kí </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Liên Hệ---------------->
+    <div id="contact" class="contact">
+        <h2 class="text-center">LIÊN HỆ </h2>
+        <div class="row">
+            <div class="col-left">
+                <p>Hãy liện hệ với chúng tôi, chúng tôi sẽ trar thời trong vòng 8 giờ .</p>
+                <p><span class="bi bi-geo-alt">Hà Nội, Việt Nam</span></p>
+                <p><span class="bi bi-phone">039.606.2022</span></p>
+                <p><span class="bi bi-envelope"> quytrinh439@gmail.com</span></p>
+            </div>
+            <div class="col-right">
+                <div class="row">
+                    <div class="col-left form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Tên " type="text" required>
+                    </div>
+                    <div class="col-right form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Ghi chú " rows="5" cols="50%"></textarea><br>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit">Gửi yêu cầu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Chân Trang------------->
+    <footer>
+        <a href="#myPage" title="To Top">
+            <i class="bi bi-chevron-compact-up"></i>
+        </a>
+        <p>Cuận lên đầu trang.</p>
+    </footer>
 </body>
 </html>
